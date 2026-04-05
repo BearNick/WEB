@@ -23,12 +23,20 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Test SSH connection
+        run: |
+          ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "whoami && pwd && ls -ld /var/www/slaynet"
+
       - name: Deploy files to VPS
         run: |
           rsync -avz --delete \
             --exclude ".git" \
             --exclude ".github" \
             ./ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/slaynet/
+
+      - name: Verify deployed file
+        run: |
+          ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "grep -n 'AUTODEPLOY TEST' /var/www/slaynet/index.html || true"
 
       - name: Reload nginx
         run: |
