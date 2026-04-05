@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Start SSH agent
         uses: webfactory/ssh-agent@v0.9.0
         with:
@@ -23,21 +20,10 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Test SSH connection
+      - name: Deploy via git pull
         run: |
-          ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "whoami && pwd && ls -ld /var/www/slaynet"
-
-      - name: Deploy files to VPS
-        run: |
-          rsync -avz --delete \
-            --exclude ".git" \
-            --exclude ".github" \
-            ./ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/slaynet/
-
-      - name: Verify deployed file
-        run: |
-          ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "grep -n 'AUTODEPLOY TEST' /var/www/slaynet/index.html || true"
-
-      - name: Reload nginx
-        run: |
-          ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "sudo /bin/systemctl reload nginx"
+          ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
+            cd /var/www/slaynet &&
+            git pull origin main &&
+            sudo /bin/systemctl reload nginx
+          "
