@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SlayNet — Telegram-боты и сайты под задачу</title>
+  <meta name="description" content="Разработка Telegram-ботов, сайтов, лендингов и автоматизаций под задачи бизнеса и экспертов.">
+  <meta name="keywords" content="Telegram bot, Telegram-бот, сайт, лендинг, разработка, автоматизация, Python, HTML, Bootstrap">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-glass">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#top">slaynet.fun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Переключить навигацию">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bots">Боты</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sites">Сайты</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process">Как работаем</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="#contact">Обсудить проект</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero-section">
+    <div class="container py-5">
+      <div class="row align-items-center min-vh-100 py-lg-5 g-5">
+        <div class="col-lg-7">
+          <span class="badge text-bg-light-subtle border border-secondary-subtle mb-3 px-3 py-2">Telegram-боты • Сайты • Автоматизация</span>
+          <h1 class="display-4 fw-bold lh-sm mb-3">Делаю Telegram-ботов и сайты, которые решают задачу, а не просто “красиво выглядят”</h1>
+          <p class="lead text-secondary mb-4">От лендинга и формы захвата до бота с оплатой, заявками, Excel/PDF-выгрузкой, AI-анализом и интеграциями. Подойдёт для экспертов, услуг, малого бизнеса и MVP.</p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a class="btn btn-primary btn-lg" href="#contact">Оставить заявку</a>
+            <a class="btn btn-outline-light btn-lg" href="#services">Посмотреть услуги</a>
+          </div>
+          <div class="row g-3 stats-row">
+            <div class="col-sm-4">
+              <div class="card stat-card h-100">
+                <div class="card-body">
+                  <div class="stat-value">1–7 дней</div>
+                  <div class="stat-label">на типовой запуск</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card stat-card h-100">
+                <div class="card-body">
+                  <div class="stat-value">MVP / custom</div>
+                  <div class="stat-label">под ваш сценарий</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card stat-card h-100">
+                <div class="card-body">
+                  <div class="stat-value">RU / EN</div>
+                  <div class="stat-label">двуязычные решения</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-card shadow-lg">
+            <div class="terminal-header d-flex align-items-center gap-2 mb-3">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="code-line"><span class="text-info">bot_type:</span> lead / sales / support / ai / calculator / booking</div>
+            <div class="code-line"><span class="text-info">site_type:</span> landing / services / promo / catalog / expert / mvp</div>
+            <div class="code-line"><span class="text-info">stack:</span> Python, aiogram, OpenAI, HTML, CSS, JS, Bootstrap</div>
+            <div class="code-line"><span class="text-info">features:</span> forms, payments, PDF, Excel, API, GPT, Whisper, CRM, admin, multilingual</div>
+            <hr class="border-secondary">
+            <div class="hero-portfolio-shell mt-4">
+              <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap mb-3">
+                <div>
+                  <h2 class="h4 mb-2">Портфолио и быстрые переходы</h2>
+                  <p class="small text-secondary mb-0">В процессе наполнения...^^.</p>
+                </div>
+                <div class="portfolio-counts d-flex flex-wrap gap-2">
+                  <span class="portfolio-chip">#telegram-боты</span>
+                  <span class="portfolio-chip">#сайты</span>
+                  <span class="portfolio-chip">#AI</span>
+
+                </div>
+              </div>
+
+              <div class="quick-jumps d-flex flex-wrap gap-2 mb-3">
+                <a href="#services" class="btn btn-sm btn-outline-light">Услуги</a>
+                <a href="#bots" class="btn btn-sm btn-outline-light">Боты</a>
+                <a href="#sites" class="btn btn-sm btn-outline-light">Сайты</a>
+                <a href="#process" class="btn btn-sm btn-outline-light">Этапы</a>
+                <a href="#contact" class="btn btn-sm btn-primary">Контакт</a>
+              </div>
+
+              <div class="accordion custom-accordion portfolio-accordion" id="portfolioAccordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioBotsCollapse" aria-expanded="false" aria-controls="portfolioBotsCollapse">
+                      Telegram-боты
+                    </button>
+                  </h3>
+                  <div id="portfolioBotsCollapse" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+                    <div class="accordion-body">
+                      <div class="portfolio-mini d-grid gap-3">
+                        <div class="portfolio-mini-item">
+                          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                            <div>
+                              <div class="portfolio-mini-title">AI анализ крови</div>
+                              <div class="portfolio-mini-text">Интерпретации лабораторных анализов.</div>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                              <a href="https://t.me/labtestresultbot" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">Открыть</a>
+                              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioBotOneModal">Подробнее</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="portfolio-mini-item">
+                          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                            <div>
+                              <div class="portfolio-mini-title">AI финансовый консультант и аналитик</div>
+                              <div class="portfolio-mini-text">Автоматизированные консультации по инвестициям, корпоративным финансам и аналитике данных.</div>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                              <a href="https://t.me/WhaleMoneyBot" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">Открыть</a>
+                              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioBotTwoModal">Подробнее</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="portfolio-mini-item">
+                          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                            <div>
+                              <div class="portfolio-mini-title">AI юридический помощник</div>
+                              <div class="portfolio-mini-text">Юридические консультации в рамках права РФ</div>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                              <a href="https://t.me/JuristRuBot" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">Открыть</a>
+                              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioBotThreeModal">Подробнее</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="portfolio-mini-item">
+                          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                            <div>
+                              <div class="portfolio-mini-title">AI психоэмоциональный анализ</div>
+                              <div class="portfolio-mini-text">Анализ внутреннего состояния и эмоций через диалог</div>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                              <a href="https://t.me/PsyZeroBot" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">Открыть</a>
+                              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioBotFourModal">Подробнее</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="portfolio-mini-item">
+                          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                            <div>
+                              <div class="portfolio-mini-title">AI хиромантия</div>
+                              <div class="portfolio-mini-text">Персональный анализ по фото ладони</div>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                              <a href="https://t.me/aipalmistrypro_bot" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">Открыть</a>
+                              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioBotFiveModal">Подробнее</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioSitesCollapse" aria-expanded="false" aria-controls="portfolioSitesCollapse">
+                      Сайты и лендинги
+                    </button>
+                  </h3>
+                  <div id="portfolioSitesCollapse" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+                    <div class="accordion-body">
+                      <div class="portfolio-mini d-grid gap-3">
+                        <div class="portfolio-mini-item">
+                          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                            <div>
+                              <div class="portfolio-mini-title">Сайт: лендинг услуги</div>
+                              <div class="portfolio-mini-text">Одностраничник для эксперта, услуги, CTA, форма заявки и адаптивная верстка.</div>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                              <a href="https://slaynet.fun" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">Смотреть</a>
+                              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioSiteOneModal">Подробнее</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="portfolio-mini-item">
+                          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                            <div>
+                              <div class="portfolio-mini-title">Сайт: каталог / услуги под ключ</div>
+                              <div class="portfolio-mini-text">Сайт с блоками услуг, кейсами, FAQ, контактами и страницей для рекламы.</div>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                              <a href="https://example.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">Смотреть</a>
+                              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioSiteTwoModal">Подробнее</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding" id="services">
+      <div class="container">
+        <div class="section-heading text-center mx-auto mb-5">
+          <span class="section-kicker">Логика решений</span>
+          <h2 class="fw-bold mb-3">Оптимальная структура для вашего одностраничника</h2>
+          <p class="text-secondary mb-0">Ниже — уже не просто советы, а готовая логика для ваших решений: под ваши Telegram-боты и сайты.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-number">01</div>
+                <h3 class="h5">Hero-экран</h3>
+                <p class="text-secondary">Сильный оффер, 2 кнопки действия, краткое позиционирование и быстрый контакт.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-number">02</div>
+                <h3 class="h5">Ваши боты</h3>
+                <p class="text-secondary">Что делают, кому полезны, как помогают бизнесу и как их можно развивать дальше.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-number">03</div>
+                <h3 class="h5">Услуги разработки</h3>
+                <p class="text-secondary">Отдельные блоки под Telegram-ботов, сайты, лендинги, интеграции и автоматизацию.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-number">04</div>
+                <h3 class="h5">Доверие и конверсия</h3>
+                <p class="text-secondary">Кейсы, FAQ, этапы работы, тарифы “от”, финальный CTA и мессенджеры.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding pt-0" id="bots">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8">
+            <span class="section-kicker">Telegram-боты</span>
+            <h2 class="fw-bold mb-2">Базовое предложение</h2>
+            <p class="text-secondary mb-0">Компетенции и и базовые сценарии</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="card offer-card h-100"><div class="card-body"><h3 class="h5">Боты для заявок</h3><p class="text-secondary">Приём обращений, квизы, сбор контактов, фильтрация лидов, передача в CRM или Telegram.</p></div></div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card offer-card h-100"><div class="card-body"><h3 class="h5">AI-боты</h3><p class="text-secondary">Разбор документов, анализ PDF, генерация рекомендаций, ответы по базе знаний.</p></div></div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card offer-card h-100"><div class="card-body"><h3 class="h5">Боты-калькуляторы</h3><p class="text-secondary">Финмодели, расчёт стоимости, подбор тарифа, выгрузка Excel/PDF после опроса.</p></div></div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card offer-card h-100"><div class="card-body"><h3 class="h5">Сервисные боты</h3><p class="text-secondary">Запись, уведомления, FAQ, языки, платежи, админ-панель и интеграции.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding pt-0" id="sites">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-6">
+            <div class="content-card h-100">
+              <span class="section-kicker">Сайты и лендинги</span>
+              <h2 class="fw-bold mb-3">Не только бот, но и точка входа для клиента</h2>
+              <p class="text-secondary">Для многих ниш лучше работает связка: сайт + бот. Сайт объясняет и продаёт, бот квалифицирует и дожимает заявку.</p>
+              <ul class="check-list mt-4">
+                <li>Одностраничники под услугу или продукт</li>
+                <li>Сайты-визитки эксперта или сервиса</li>
+                <li>Промо-страницы под рекламу</li>
+                <li>Формы, квизы, CTA на Telegram / WhatsApp</li>
+                <li>Базовая SEO-структура и мобильная адаптация</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="content-card h-100">
+              <h3 class="h4 mb-3">Кому это подходит</h3>
+              <div class="row g-3">
+                <div class="col-sm-6"><div class="mini-card">Экспертам и консультантам</div></div>
+                <div class="col-sm-6"><div class="mini-card">Клиникам и услугам</div></div>
+                <div class="col-sm-6"><div class="mini-card">Локальному бизнесу</div></div>
+                <div class="col-sm-6"><div class="mini-card">Образовательным проектам</div></div>
+                <div class="col-sm-6"><div class="mini-card">MVP и стартапам</div></div>
+                <div class="col-sm-6"><div class="mini-card">Тем, кому нужен запуск быстро</div></div>
+              </div>
+              <hr class="border-secondary my-4">
+              <p class="mb-0 text-secondary">На старте не нужен “огромный сайт”. Гораздо выгоднее сделать сильный лендинг, понятное предложение и связать всё с ботом или формой заявки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="process">
+      <div class="container">
+        <div class="section-heading text-center mx-auto mb-5">
+          <span class="section-kicker">Как работаем</span>
+          <h2 class="fw-bold mb-3">Простая схема без лишней бюрократии</h2>
+        </div>
+        <div class="row g-4 timeline-row">
+          <div class="col-md-6 col-xl-3">
+            <div class="timeline-card h-100"><div class="timeline-dot"></div><h3 class="h5">1. Бриф</h3><p class="text-secondary">Понимаем задачу, целевое действие, сценарии и нужный функционал.</p></div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="timeline-card h-100"><div class="timeline-dot"></div><h3 class="h5">2. Прототип</h3><p class="text-secondary">Собираем структуру, тексты, UX-логику и ключевые блоки.</p></div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="timeline-card h-100"><div class="timeline-dot"></div><h3 class="h5">3. Разработка</h3><p class="text-secondary">Верстаем сайт или собираем бота, подключаю нужные интеграции.</p></div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="timeline-card h-100"><div class="timeline-dot"></div><h3 class="h5">4. Запуск</h3><p class="text-secondary">Помогаем выложить проект, проверить формы, домен, кнопки и заявки.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding pt-0" id="faq">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <span class="section-kicker">FAQ</span>
+            <h2 class="fw-bold mb-3">Вопросы, которые обычно задают</h2>
+            <p class="text-secondary">В одностраничнике FAQ нужен обязательно: он снимает возражения и подталкивает к обращению.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="accordion custom-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Вы делаете и сайт, и бота вместе?</button></h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Да. Можно заказать отдельно сайт, отдельно Telegram-бота или связку из сайта + бота + интеграций.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Можно ли доработать уже существующий проект?</button></h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Да. Мы можем подключиться к существующему лендингу, боту, форме, логике заявок или интеграциям.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Какие технологии используете?</button></h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Для сайтов — HTML, CSS, JavaScript, Bootstrap. Для ботов — Python, aiogram, API-интеграции, AI-функции, работа с PDF/Excel и внешними сервисами.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Сколько это стоит?</button></h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Цена зависит от логики, интеграций и объёма. На сайте лучше писать диапазоны “от”, а точную оценку давать после короткого брифа.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding pt-0" id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <span class="section-kicker text-white-50">Контакт</span>
+              <h2 class="fw-bold mb-3">Нужен бот, сайт или связка из двух решений?</h2>
+              <p class="mb-0 text-white-50">Пиши в Telegram, e-mail!</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="d-grid gap-3">
+                <a href="https://t.me/conservathor" class="btn btn-light btn-lg" target="_blank" rel="noopener">Telegram: @conservathor</a>
+                <a href="mailto:hello@slaynet.fun" class="btn btn-outline-light btn-lg">hello@slaynet.fun</a>
+                <button class="btn btn-outline-info btn-lg" id="copyEmailBtn" type="button" data-email="hello@slaynet.fun">Скопировать email</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <div class="text-secondary">© <span id="footerYear">2026</span> slaynet.fun — Telegram-боты, сайты, автоматизация</div>
+      <div class="text-secondary">Есть идея? Пиши — "покрутим" и найдём лучший формат решения!</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/script.js"></script>
+
+
+  <div class="modal fade" id="portfolioBotOneModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h3 class="modal-title h5">Telegram-бот: AI / анализ крови</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Подходит для интерпретации лабораторных анализов, первичной оценки состояния, рекомендаций и автоматической обработки PDF/фото анализов через ИИ.</p>
+          <ul>
+            <li>Интерпретация показателей крови и биохимии</li>
+            <li>Анализ отклонений и взаимосвязей</li>
+            <li>Поддержка PDF, фото и текстовых данных</li>
+            <li>Автоматическая генерация рекомендаций (питание, витамины, дообследования)</li>
+            <li>Без хранения персональных данных (обработка в реальном времени)</li>
+
+          </ul>
+          <a href="https://t.me/labtestresultbot" target="_blank" rel="noopener" class="btn btn-primary">Перейти к боту</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="portfolioBotTwoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h3 class="modal-title h5">🤖 AI финансовый консультант и аналитик</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Подходит для автоматизированных консультаций по инвестициям, корпоративным финансам, оценке бизнеса и аналитике данных. Обрабатывает текст, голос и документы, выдавая структурированные рекомендации через GPT.</p>
+          <ul>
+            <li>💬 Анализ финансовых вопросов (акции, мультипликаторы, юнит-экономика, DCF, IRR, WACC)</li>
+            <li>🎙 Распознавание голосовых запросов (Whisper)</li>
+            <li>📄 Анализ PDF-документов (отчёты, финмодели, презентации)</li>
+            <li>🧠 Структурированные ответы: метрики, формулы, выводы, план действий</li>
+            <li>⚙️ Гибкая настройка логики (промты, ограничения, сценарии)</li>
+          </ul>
+          <a href="https://t.me/WhaleMoneyBot" target="_blank" rel="noopener" class="btn btn-primary">Открыть бота</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="portfolioBotThreeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h3 class="modal-title h5">AI юридический помощник</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Подходит для юридических консультаций, разбора ситуаций, поиска норм права и выдачи практических рекомендаций с опорой на актуальные источники.</p>
+          <ul>
+            <li>Анализ запроса и определение юридического контекста</li>
+            <li>Подбор норм (КоАП, УК, ГК и др.) и релевантных статей</li>
+            <li>Генерация понятных пошаговых действий («что делать»)</li>
+            <li>Поиск и агрегирование источников (гос. базы, правовые системы)</li>
+            <li>Ответы через GPT с учётом контекста и ситуации</li>
+            <li>Поддержка текста и голосовых сообщений</li>
+            <li>Автоматическое определение языка пользователя</li>
+            <li>Система тарифов и лимитов (подписки, кредиты)</li>
+            <li>Интеграции с API поиска, платежами и внешними сервисами</li>
+
+          </ul>
+          <a href="https://t.me/JuristRuBot" target="_blank" rel="noopener" class="btn btn-primary">Открыть бота</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="portfolioBotFourModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h3 class="modal-title h5">AI психоэмоциональный анализ</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Бот для анализа внутреннего состояния человека через диалог. Помогает понять, что происходит внутри, и найти точку опоры.</p>
+          <ul>
+            <li>Анализ на базе GPT с персонализацией</li>
+            <li>Поддержка текста и голосовых сообщений (Whisper)</li>
+            <li>Гибкие сценарии (FSM, aiogram)</li>
+            <li>Ответы через GPT с учётом контекста и ситуации</li>
+            <li>Интеграция с API (OpenAI)</li>
+            <li>Возможность монетизации (подписка / Stripe и пр.)</li>
+
+          </ul>
+          <a href="https://t.me/PsyZeroBot" target="_blank" rel="noopener" class="btn btn-primary">Открыть бота</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="portfolioBotFiveModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h3 class="modal-title h5">AI хиромантия</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Подходит для персонального анализа по фото ладони, консультаций и выдачи рекомендаций с помощью AI.</p>
+          <ul>
+            <li>Приём и обработка изображений (до 7 фото)</li>
+            <li>Анализ на базе GPT с глубокой персонализацией</li>
+            <li>Анализ личности, энергии, карьеры и отношений</li>
+            <li>Генерация структурированных ответов через GPT</li>
+            <li>Поддержка нескольких языков (RU / EN / ES)</li>
+            <li>Проверка качества изображений перед анализом</li>
+            <li>Интеграция оплат (Telegram Stars / Stripe)</li>
+            <li>Гибкая логика сценариев и состояний (FSM)</li>
+
+          </ul>
+          <a href="https://t.me/aipalmistrypro_bot" target="_blank" rel="noopener" class="btn btn-primary">Открыть бота</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="portfolioSiteOneModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h3 class="modal-title h5">Сайт: лендинг услуги</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Одностраничный сайт под услугу, эксперта или локальный бизнес: оффер, преимущества, кейсы, FAQ и заявка.</p>
+          <ul>
+            <li>Bootstrap-верстка и адаптивность</li>
+            <li>Формы захвата и кнопки мессенджеров</li>
+            <li>Быстрый запуск без перегруза по структуре</li>
+          </ul>
+          <a href="https://slaynet.fun" target="_blank" rel="noopener" class="btn btn-primary">Открыть сайт</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="portfolioSiteTwoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h3 class="modal-title h5">Сайт: каталог / услуги под ключ</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Подходит для демонстрации услуг, кейсов, тарифов и портфолио с рекламным трафиком из Avito, FL и других площадок.</p>
+          <ul>
+            <li>Блоки услуг и кейсов</li>
+            <li>Понятная структура под рекламу</li>
+            <li>Кнопки на Telegram, WhatsApp, форму заявки</li>
+          </ul>
+          <a href="https://example.com" target="_blank" rel="noopener" class="btn btn-primary">Смотреть пример</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
