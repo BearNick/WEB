@@ -2,19 +2,6 @@
 <html lang="ru" data-bs-theme="dark">
 <head>
   <meta charset="utf-8">
-  <script>
-    (function() {
-      var initialLanguage = 'ru';
-      try {
-        var savedLanguage = localStorage.getItem('language');
-        if (savedLanguage === 'ru' || savedLanguage === 'en') {
-          initialLanguage = savedLanguage;
-        }
-      } catch (error) {}
-      document.documentElement.lang = initialLanguage;
-      document.documentElement.dataset.initialLanguage = initialLanguage;
-    })();
-  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-i18n="meta_title">SlayNet — сайты, Telegram-боты, PWA и автоматизация для заявок</title>
   <meta name="description" data-i18n-content="meta_description" content="Разработка сайтов, лендингов, Telegram-ботов, PWA и автоматизации для бизнеса, экспертов и MVP. Собираем понятную воронку, которая приносит заявки и экономит время.">
@@ -136,7 +123,7 @@
           <li class="nav-item"><a class="nav-link" href="#bots"><span data-i18n="bots">Боты</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#sites"><span data-i18n="websites">Сайты</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#process"><span data-i18n="process">Как работаем</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq"><span data-i18n="faq_short">Вопросы</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
           <li class="nav-item">
             <div class="language-switch ms-lg-2" role="group" data-i18n-aria-label="language_switch_label" aria-label="Переключатель языка">
               <button class="language-switch-btn active" type="button" data-lang="ru" aria-pressed="true">RU</button>
@@ -155,7 +142,7 @@
         <div class="col-lg-7">
           <span class="badge text-bg-light-subtle border border-secondary-subtle mb-3 px-3 py-2"><span data-i18n="telegram_bots_websites_automation">Сайты • Telegram-боты • PWA • Автоматизация</span></span>
           <h1 class="display-4 fw-bold lh-sm mb-3"><span data-i18n="we_build_telegram_bots_and_websites_that_sol">Создаём сайты, Telegram-ботов и автоматизацию, которые приводят заявки и экономят время</span></h1>
-          <p class="lead text-secondary mb-4"><span data-i18n="from_a_landing_page_and_lead_form_to_a_bot_w">Для экспертов, сервисных компаний, локального бизнеса и MVP: собираем понятную воронку от лендинга и формы до Telegram-бота, PWA, оплат, ИИ и интеграций.</span></p>
+          <p class="lead text-secondary mb-4"><span data-i18n="from_a_landing_page_and_lead_form_to_a_bot_w">Для экспертов, сервисных компаний, локального бизнеса и MVP: собираем понятную воронку от лендинга и формы до Telegram-бота, PWA, оплат, AI и интеграций.</span></p>
           <div class="d-flex flex-wrap gap-3 mb-4">
             <a class="btn btn-primary btn-lg" href="#contact"><span data-i18n="send_a_request">Получить быстрый расчёт</span></a>
             <a class="btn btn-outline-light btn-lg" href="#services"><span data-i18n="view_services">Выбрать решение</span></a>
@@ -172,7 +159,7 @@
             <div class="col-sm-4">
               <div class="card stat-card h-100">
                 <div class="card-body">
-                  <div class="stat-value"><span data-i18n="stat_mvp_custom">MVP / индивидуально</span></div>
+                  <div class="stat-value">MVP / custom</div>
                   <div class="stat-label"><span data-i18n="for_your_workflow">под ваш сценарий</span></div>
                 </div>
               </div>
@@ -180,7 +167,7 @@
             <div class="col-sm-4">
               <div class="card stat-card h-100">
                 <div class="card-body">
-                  <div class="stat-value"><span data-i18n="stat_ru_en">RU / EN</span></div>
+                  <div class="stat-value">RU / EN</div>
                   <div class="stat-label"><span data-i18n="bilingual_solutions">двуязычные решения</span></div>
                 </div>
               </div>
@@ -192,10 +179,10 @@
             <div class="terminal-header d-flex align-items-center gap-2 mb-3">
               <span></span><span></span><span></span>
             </div>
-            <div class="code-line"><span class="text-info" data-i18n="hero_code_bot_type_label">тип_бота:</span> <span data-i18n="hero_code_bot_type_value">лиды / продажи / поддержка / ИИ / калькулятор / запись</span></div>
-            <div class="code-line"><span class="text-info" data-i18n="hero_code_site_type_label">тип_сайта:</span> <span data-i18n="hero_code_site_type_value">лендинг / услуги / промо / каталог / эксперт / mvp</span></div>
-            <div class="code-line"><span class="text-info" data-i18n="hero_code_stack_label">стек:</span> <span data-i18n="hero_code_stack_value">Python, aiogram, OpenAI, HTML, CSS, JS, Bootstrap</span></div>
-            <div class="code-line"><span class="text-info" data-i18n="hero_code_features_label">функции:</span> <span data-i18n="hero_code_features_value">формы, оплаты, PDF, Excel, API, GPT, Whisper, CRM, админка, мультиязычность</span></div>
+            <div class="code-line"><span class="text-info">bot_type:</span> lead / sales / support / ai / calculator / booking</div>
+            <div class="code-line"><span class="text-info">site_type:</span> landing / services / promo / catalog / expert / mvp</div>
+            <div class="code-line"><span class="text-info">stack:</span> Python, aiogram, OpenAI, HTML, CSS, JS, Bootstrap</div>
+            <div class="code-line"><span class="text-info">features:</span> forms, payments, PDF, Excel, API, GPT, Whisper, CRM, admin, multilingual</div>
             <hr class="border-secondary">
             <div class="hero-portfolio-shell mt-4">
               <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap mb-3">
@@ -207,7 +194,7 @@
                   <span class="portfolio-chip"><span data-i18n="telegram_bots">#telegram-боты</span></span>
                   <span class="portfolio-chip"><span data-i18n="websites_2">#сайты</span></span>
                   <span class="portfolio-chip"><span data-i18n="pwa_projects_tag">#PWA</span></span>
-                  <span class="portfolio-chip"><span data-i18n="portfolio_chip_ai">#AI</span></span>
+                  <span class="portfolio-chip">#AI</span>
 
                 </div>
               </div>
@@ -341,7 +328,7 @@
                 <div class="accordion-item">
                   <h3 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioPwaCollapse" aria-expanded="false" aria-controls="portfolioPwaCollapse">
-                      <span data-i18n="pwa_title">PWA-приложения</span>
+                      <span data-i18n="pwa_projects">PWA-приложения</span>
                     </button>
                   </h3>
                   <div id="portfolioPwaCollapse" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
@@ -377,7 +364,7 @@
         <div class="section-heading text-center mx-auto mb-5">
           <span class="section-kicker"><span data-i18n="solution_logic">Что можно заказать</span></span>
           <h2 class="fw-bold mb-3"><span data-i18n="an_effective_structure_for_your_one_page_sit">Разработка под заявки, продажи и автоматизацию</span></h2>
-          <p class="text-secondary mb-0"><span data-i18n="below_is_practical_solution_logic_for_your_t">Подбираем формат под вашу задачу: сайт для трафика, Telegram-бот для диалога, PWA для продукта и автоматизацию для рутины.</span></p>
+          <p class="text-secondary mb-0"><span data-i18n="below_is_practical_solution_logic_for_your_t">Выбираем формат под вашу задачу: сайт или landing page для трафика, Telegram-бот для диалога, PWA для продукта, автоматизация для рутины.</span></p>
         </div>
         <div class="row g-4">
           <div class="col-md-6 col-xl-3">
@@ -397,8 +384,8 @@
             <div class="card service-card h-100">
               <div class="card-body">
                 <div class="service-number">02</div>
-                <h3 class="h5"><span data-i18n="your_bots">Сайты и лендинги</span></h3>
-                <p class="text-secondary"><span data-i18n="what_they_do_who_they_help_how_they_support_">Создаём сайты с понятным оффером, SEO-структурой, сильными призывами к действию и формой заявки для рекламного и органического трафика.</span></p>
+                <h3 class="h5"><span data-i18n="your_bots">Сайты и landing pages</span></h3>
+                <p class="text-secondary"><span data-i18n="what_they_do_who_they_help_how_they_support_">Делаем website development с понятным оффером, SEO-структурой, быстрыми CTA и формой заявки для рекламного и органического трафика.</span></p>
                 <ul class="feature-list mt-3 mb-0">
                   <li><span data-i18n="service_site_outcome_1">Посетителю сразу ясно, что вы предлагаете</span></li>
                   <li><span data-i18n="service_site_outcome_2">Лендинг ведёт к заявке, звонку или Telegram</span></li>
@@ -423,7 +410,7 @@
             <div class="card service-card h-100">
               <div class="card-body">
                 <div class="service-number">04</div>
-                <h3 class="h5"><span data-i18n="trust_and_conversion">Автоматизация и ИИ</span></h3>
+                <h3 class="h5"><span data-i18n="trust_and_conversion">Автоматизация и AI</span></h3>
                 <p class="text-secondary"><span data-i18n="cases_faq_work_stages_starting_prices_a_fina">Настраиваем автоматизацию заявок, документов, таблиц, уведомлений и AI-сценариев, чтобы команда меньше тратила время на повторяющиеся действия.</span></p>
                 <ul class="feature-list mt-3 mb-0">
                   <li><span data-i18n="service_ai_outcome_1">Меньше ручной обработки и потерь заявок</span></li>
@@ -570,7 +557,7 @@
       <div class="container">
         <div class="row g-4 align-items-start">
           <div class="col-lg-5">
-            <span class="section-kicker"><span data-i18n="faq_short">Вопросы</span></span>
+            <span class="section-kicker">FAQ</span>
             <h2 class="fw-bold mb-3"><span data-i18n="questions_people_usually_ask">Вопросы, которые обычно задают</span></h2>
               <p class="text-secondary"><span data-i18n="a_faq_is_important_on_a_one_page_site_it_rem">Короткие ответы на вопросы, которые обычно появляются перед заявкой.</span></p>
           </div>
@@ -600,57 +587,27 @@
 
     <section class="section-padding pt-0" id="contact">
       <div class="container">
-        <div class="contact-panel">
-          <div class="row g-4 align-items-stretch">
-            <div class="col-lg-5">
-              <div class="contact-intro h-100">
-                <div>
-                  <span class="section-kicker text-white-50"><span data-i18n="contact">Контакт</span></span>
-                  <h2 class="fw-bold mb-3"><span data-i18n="contact_chat_title">Расскажите о задаче в одном сообщении</span></h2>
-                </div>
-                <div class="contact-benefits">
-                  <span class="contact-benefit-chip"><span data-i18n="contact_chat_chip_1">Быстрый первичный ответ</span></span>
-                  <span class="contact-benefit-chip"><span data-i18n="contact_chat_chip_2">Связь там, где вам удобно</span></span>
-                  <span class="contact-benefit-chip"><span data-i18n="contact_chat_chip_3">Поддержка RU / EN</span></span>
-                </div>
-                <div class="contact-direct-note">
-                  <div class="contact-direct-note-label"><span data-i18n="contact_chat_direct_label">Если удобнее напрямую</span></div>
-                  <a class="contact-direct-link" href="https://t.me/conservathor" target="_blank" rel="noopener">Telegram: @conservathor</a><br>
-                  <a class="contact-direct-link" href="mailto:hello@slaynet.fun">hello@slaynet.fun</a>
-                </div>
-              </div>
-            </div>
+        <div class="cta-box">
+          <div class="row g-4 align-items-center">
             <div class="col-lg-7">
-              <div class="contact-chat-shell h-100">
-                <form class="contact-chat-form" id="projectForm" action="/api/contact.php" data-endpoint="/api/contact.php" novalidate>
-                  <div class="contact-request-module">
-                    <div class="contact-form-grid">
-                      <div class="contact-form-field">
-                        <label class="form-label" for="projectName"><span data-i18n="form_name_label">Имя</span></label>
-                        <input class="form-control" id="projectName" name="name" type="text" autocomplete="name" data-i18n-placeholder="form_name_placeholder" placeholder="Как к вам обращаться" required>
-                      </div>
+              <span class="section-kicker text-white-50"><span data-i18n="contact">Контакт</span></span>
+              <h2 class="fw-bold mb-3"><span data-i18n="need_a_bot_website_or_both_together">Расскажите о проекте</span></h2>
+              <p class="mb-0 text-white-50"><span data-i18n="message_us_on_telegram_or_by_email">Ответим быстро: уточним задачу, предложим первый шаг и дадим ориентир по срокам и стоимости.</span></p>
+            </div>
+            <div class="col-lg-5">
+              <form class="contact-form" id="projectForm">
+                <label class="form-label" for="projectName"><span data-i18n="form_name_label">Имя</span></label>
+                <input class="form-control form-control-lg mb-3" id="projectName" name="name" type="text" autocomplete="name" data-i18n-placeholder="form_name_placeholder" placeholder="">
 
-                      <div class="contact-form-field">
-                        <label class="form-label" for="projectContact"><span data-i18n="form_contact_label">Контактная информация</span></label>
-                        <input class="form-control" id="projectContact" name="contact" type="text" autocomplete="off" data-i18n-placeholder="form_contact_placeholder" placeholder="Telegram, email, телефон или любой другой контакт" required>
-                      </div>
+                <label class="form-label" for="projectContact"><span data-i18n="form_contact_label">Telegram или email</span></label>
+                <input class="form-control form-control-lg mb-3" id="projectContact" name="contact" type="text" autocomplete="email" data-i18n-placeholder="form_contact_placeholder" placeholder="" required>
 
-                      <div class="contact-form-field contact-form-field-wide contact-form-field-message">
-                        <label class="form-label" for="projectMessage"><span data-i18n="form_message_label">Опишите задачу</span></label>
-                        <textarea class="form-control" id="projectMessage" name="message" rows="5" data-i18n-placeholder="form_message_placeholder" placeholder="Коротко опишите задачу, что нужно сделать и какой результат нужен в первую очередь." required></textarea>
-                      </div>
-                    </div>
+                <label class="form-label" for="projectMessage"><span data-i18n="form_message_label">Что нужно сделать?</span></label>
+                <textarea class="form-control form-control-lg mb-3" id="projectMessage" name="message" rows="4" data-i18n-placeholder="form_message_placeholder" placeholder="" required></textarea>
 
-                    <div class="contact-form-footer mt-3">
-                      <button class="btn contact-form-submit" id="projectFormSubmit" type="submit" aria-busy="false">
-                        <span data-form-submit-label data-i18n="form_submit">Отправить заявку</span>
-                      </button>
-                    </div>
-
-                    <div class="form-message mt-3" id="formMessage" hidden></div>
-                  </div>
-                </form>
-              </div>
+                <button class="btn btn-light btn-lg w-100" type="submit"><span data-i18n="form_submit">Отправить и получить оценку</span></button>
+                <p class="small text-white-50 mt-3 mb-0"><span data-i18n="form_hint">Если удобнее без формы, напишите напрямую в Telegram: </span><a class="text-white" href="https://t.me/conservathor" target="_blank" rel="noopener">@conservathor</a></p>
+              </form>
             </div>
           </div>
         </div>
@@ -661,7 +618,7 @@
   <footer class="py-4">
     <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
       <div class="text-secondary">© <span id="footerYear">2026</span> <span data-i18n="slaynet_fun_telegram_bots_websites_automatio">slaynet.fun — Telegram-боты, сайты, автоматизация</span></div>
-      <div class="text-secondary"><span data-i18n="have_an_idea_write_to_us_and_we_will_find_th">Есть идея? Напишите нам, и мы предложим лучший формат запуска.</span></div>
+      <div class="text-secondary"><span data-i18n="have_an_idea_write_to_us_and_we_will_find_th">Есть идея? Пиши — "покрутим" и найдём лучший формат решения!</span></div>
     </div>
   </footer>
 
@@ -839,7 +796,7 @@
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-i18n-aria-label="close" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p><span data-i18n="birthmap_extended">Birthmap — это PWA-приложение, которое анализирует данные рождения и показывает их в структурированном и удобном виде. Сервис объединяет интерпретацию, рекомендации и простой интерфейс.</span></p>
+          <p><span data-i18n="birthmap_extended_description">Birthmap — это PWA-приложение, которое анализирует данные рождения и показывает их в структурированном и удобном виде. Сервис объединяет интерпретацию, рекомендации и простой интерфейс.</span></p>
           <a href="https://birthmap.tech" target="_blank" rel="noopener" class="btn btn-primary"><span data-i18n="open_pwa">Открыть PWA</span></a>
         </div>
       </div>
